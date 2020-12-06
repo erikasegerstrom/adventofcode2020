@@ -1,0 +1,4 @@
+n_rows = 3
+n_columns = 4
+matrix = [[0] * n_columns] * n_rows
+print(matrix)
