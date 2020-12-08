@@ -3,7 +3,7 @@ from graphs import Graph
 
 # Import data
 input_data = Path('/Kodprojekt/adventofcode/adventofcode2020/input_data')
-input_file = input_data / 'adventofcode_7_input_test.txt'
+input_file = input_data / 'adventofcode_7_input.txt'
 f = open(input_file, 'r')
 content = f.readlines()
 
@@ -18,26 +18,11 @@ for line in content:
             bag_dict[bag_type].extend([split_line[index] + ' ' + split_line[index+1]])
             index += 4
 
-print(bag_dict)
-#graph = Graph(bag_dict)
-"""
-# droppa key = shiny gold?
-all_possible_bags = []
+graph = Graph(bag_dict)
 bag_to_find = 'shiny gold'
+number_of_bags = 0
 for key in bag_dict.keys():
-    sub_bags = bag_dict[key]
-    if bag_to_find in sub_bags:
-        all_possible_bags.append(key)
-    else:
-        for value in sub_bags:
-            if bag_to_find in bag_dict[value]:
-                print(key, value)
-                all_possible_bags.append(key)
+    if graph.find_path(key, bag_to_find) != None and key != bag_to_find:
+        number_of_bags += 1
 
-def search_bags(bag_dict, bag_to_find, list_append):
-    for key in bag_dict.keys():
-
-
-all_possible_bags = list(set(all_possible_bags))
-n_bags = len(all_possible_bags)
-print('Number of bags: ', n_bags)"""
+print(number_of_bags)
