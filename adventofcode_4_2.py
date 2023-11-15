@@ -2,7 +2,7 @@ import numpy as np
 from collections import defaultdict
 
 # Import data
-f = open('adventofcode_input_4_1.txt', 'r')
+f = open('input_data/adventofcode_input_4_1.txt', 'r')
 content = f.readlines()
 passports = defaultdict(dict)
 pass_nbr = 0

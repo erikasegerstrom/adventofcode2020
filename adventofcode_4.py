@@ -1,7 +1,7 @@
 import numpy as np
 
 # Import data
-f = open('adventofcode_input_4_1.txt', 'r')
+f = open('input_data/adventofcode_input_4_1.txt', 'r')
 content = f.readlines()
 passports = {}
 pass_nbr = 0

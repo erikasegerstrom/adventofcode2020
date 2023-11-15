@@ -1,5 +1,5 @@
 def import_data():
-    text_file = open("adventofcode_1_1_input.txt", "r")
+    text_file = open("input_data/adventofcode_1_1_input.txt", "r")
     lines = text_file.read().split('\n')
     return lines
 
@@ -31,5 +31,5 @@ def run_1_2(input):
                 exit()
             j += 1
 
-#run_1_1(input)
-#run_1_2(input)
+run_1_1(input)
+run_1_2(input)

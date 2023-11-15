@@ -1,5 +1,5 @@
 import numpy as np
-f = open('adventofcode_input_3_1.txt', 'r')
+f = open('input_data/adventofcode_input_3_1.txt', 'r')
 content = f.read()
 
 arr  = list(filter(lambda a: a != '\n', list(content)))

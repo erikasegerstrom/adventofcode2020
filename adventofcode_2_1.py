@@ -1,7 +1,7 @@
 import re
 
 def import_data():
-    text_file = open("adventofcode_2_1_input.txt", "r")
+    text_file = open("input_data/adventofcode_2_1_input.txt", "r")
     lines = text_file.read().split('\n')
     return lines
 

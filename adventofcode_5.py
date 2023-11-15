@@ -1,5 +1,5 @@
 # Import data
-f = open('adventofcode_input_5_1.txt', 'r')
+f = open('input_data/adventofcode_input_5_1.txt', 'r')
 content = f.readlines()
 
 n_rows = 128

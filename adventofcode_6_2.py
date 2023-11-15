@@ -1,5 +1,5 @@
 # Import data
-f = open('adventofcode_input_6.txt', 'r')
+f = open('input_data/adventofcode_input_6.txt', 'r')
 content = f.readlines()
 
 sum_intersect = 0
